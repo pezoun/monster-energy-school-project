@@ -1,0 +1,339 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:monster;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: auto;
+  scroll-behavior: smooth;
+
+}
+@font-face{
+  font-family:monster;
+  src: url(Green_Energy.ttf);
+}
+
+body{
+  min-height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,121,9,1) 79%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav{
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 80px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: monster;
+}
+nav ul li a {
+  transition: all 1s;
+}
+
+nav ul li a:after {
+  text-align: left;
+  content: '';
+  margin: 0;
+  opacity: 0;
+}
+nav ul li a:hover {
+  color: #00ff26;
+  z-index: 1;
+}
+nav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 0,5s forwards;
+  -webkit-animation: fill 0,5,řs forwards;
+  -moz-animation: fill 0,5s forwards;
+  opacity: 1;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 248, 248, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+.logo-mobil{
+  width: 160px;
+  height: 80px;
+  margin-left: 50px;
+}
+.home{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.container-PL2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.monster-plech{
+  margin-top: 100px;
+  width: 800px;
+  height: 600px;
+}
+.monster-plech2{
+  width: 1000px;
+  height: 900px;
+}
+.text1{
+  width: 500px;
+  height: 300px;
+  margin-top: 300px;
+  padding-left: 200px;
+}
+.text2{
+  margin-left: 20px;
+  
+  width: 500px;
+  height: 400px;
+}
+hr{
+  transform: rotate(-4deg);
+  width: 100%;
+  height: 2px;
+  color: #00ff26;
+  position: relative;
+  top: 90px;
+
+}
+.nava{
+  background:black ;
+  box-shadow: #000000;
+  max-width: 400px;
+  max-height: 600px;
+  color: white;
+  padding: 20px;
+}
+.boxa{
+  display: flex;
+  flex-direction: row;
+  padding:200Px ;
+}
+.boxb{
+  display: flex;
+  flex-direction: row;
+  padding: 200Px;
+  
+}
+.motor{
+  color: #00ff26;
+  font-size: 20px;
+  font-family: monster;
+}
+.boxobsah1{
+  color: white;
+  font-size: 25px;
+}
+.obrazekboxa{
+  max-width: 600px;
+  max-height: 600px;
+}
+.parent-n{
+  display: flex;
+  flex-direction: column;
+}
+.child-n{
+  font-family: monster;
+  font-size: 70px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.tlacidlo{
+  margin-left: 45vw;
+  transform: scale(120%);
+  padding: 40px;
+  z-index: -400;
+}
+button{
+  background-color: #000000; 
+  border:0 5px rgb(53, 255, 7);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: -29090;
+}
+.parent-p{
+  display: flex;
+  flex-direction: column;
+}
+.child-p{
+  font-family: monster;
+  font-size: 70px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.parent-logo{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.child-logo{
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+}
+.container-card{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.container-card-ultra{
+  display: flex;
+  justify-content: center;
+  gap: 145px;
+}
+.container-card-juice{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.card{
+  transform: scale(90%);
+  background: rgba(47, 46, 46, 80%);
+  border-radius: 25px;
+  z-index: -1;
+}
+.card-ultra{
+  transform: scale(110%);
+  background: rgba(47, 46, 46, 80%);
+  border-radius: 25px;
+  z-index: -1;
+}
+.card-juice{
+  background: rgba(47, 46, 46, 80%);
+  border-radius: 25px;
+  z-index: -1;
+}
+.obsah-promo{
+  color: white;
+  font-size: 25px;
+  background:black ;
+  box-shadow: #000000;
+  max-width: 600px;
+  max-height: 600px;
+  color: white;
+  padding: 20px;
+}
+.obrazek-promo{
+  width: 500px;
+}
+.tema{
+  color: #00ff26;
+  font-family: monster;
+}
+.heading-p{
+  color: grey;
+  font-family: monster;
+}
+.promo-text{
+  padding: 40px;
+}
+.box-promo{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.element {
+  overflow-x: hidden;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+@media(max-width: 800px){
+  .logo-mobil{
+    margin-left: 25px;
+  }
+  body{
+    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,121,9,1) 79%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container-PL1{
+flex-direction: column;
+justify-content: center;
+  }
+  .container-PL2{
+    flex-direction: column;
+    justify-content: center;
+      }
+  .monster-plech2{
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .monster-plech1{
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+hr {
+  z-index: -1;
+}
